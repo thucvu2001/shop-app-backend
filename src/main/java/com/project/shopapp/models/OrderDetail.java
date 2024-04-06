@@ -1,10 +1,7 @@
 package com.project.shopapp.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Getter
@@ -12,6 +9,7 @@ import lombok.Setter;
 @Table(name = "order_details")
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class OrderDetail {
 
     @Id
@@ -30,7 +28,7 @@ public class OrderDetail {
     private Float price;
 
     @Column(name = "number_of_products", nullable = false)
-    private int numberOfProduct;
+    private int numberOfProducts;
 
     @Column(name = "total_money", nullable = false)
     private Float totalMoney;

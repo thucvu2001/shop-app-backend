@@ -9,7 +9,7 @@ import java.util.List;
 @Data//toString
 @Getter
 @Setter
-@SuperBuilder
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductListResponse {
