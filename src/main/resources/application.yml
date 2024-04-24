@@ -23,3 +23,7 @@ spring:
     name: shopapp
 api:
   prefix: /api/v1
+
+jwt:
+  expiration: 2592000
+  secretKey: a5f3299d04ab19e08d1e2e70aaac0ff0cfe99c9b958288b1f9f2342ace6c386c
